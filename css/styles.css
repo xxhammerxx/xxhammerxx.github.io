@@ -1,0 +1,707 @@
+@charset  "utf-8";
+
+/* CSS Document */
+body,html {
+  margin: 0;
+  padding: 0;
+/*background:url(../images/wave.png);*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 12pt;
+  font-family: Geneva,sans-serif;
+}
+h1,h3,h5,h6,p {
+  margin-top: 0;
+/* removing the top margin gets around an issue where margins can escape from their containing div. 
+The remaining bottom margin will hold it away from any elements that follow. */
+  padding-right: 10px;
+  padding-left: 10px;
+/* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math 
+A nested div with side padding can also be used as an alternate method. */
+}
+h1 {
+  font-size: 24pt;
+  style: bold;
+  text-decoration: underline;
+  font-color: #b40c00;
+}
+a img {
+/* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+  border: none;
+}
+/* .... index page.....*/
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+#wrapper {
+  background: #F6F6F6;
+  border: 1px solid #603;
+  width: 798px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.container {
+  width: 80%;
+  max-width: 1260px;
+/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+  min-width: 780px;
+/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+  background: #FFF;
+  margin: 0 auto;
+/* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+#header_container {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#leftheader {
+  width: 49.5%;
+  height: 140px;
+  float: left;
+}
+.img1 {
+  width: 395px;
+  height: 140px;
+}
+#rightheader {
+  float: right;
+  height: 140px;
+  width: 49.5%;
+  font-size: 10pt;
+  text-align: center;
+  background: #fff;
+}
+
+/* Navigational Bar */
+#navbar {
+  background-color: #ff0;
+  width: 100%;
+  position: relative;
+  margin-top: 160px;
+  height: 30px;
+  font-size: 12px;
+}
+#nav {
+  margin-top: 0;
+  width: 100%;
+  float: right;
+  list-style: none;
+  background-color: #b40c00;
+}
+#nav li {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+}
+#nav li a {
+  display: block;
+  padding: 8px 13px;
+  text-decoration: none;
+  color: #fff;
+  border-right: 1px solid #ccc;
+}
+#nav a.active {
+  background-color: #111;
+}
+#nav li a:hover {
+  color: fff;
+  background-color: #e86600;
+}
+.loginli {
+  float: right !important;
+}
+/*....Main Content Index Page....*/
+#home_content {
+  clear: left;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #603;
+  border-bottom: 1px solid #603;
+  border-right: 1px solid #603;
+  width: 70.9%;
+  height: 650px;
+  text-align: left;
+  margin-top: -5px;
+}
+/*....Paragraph Headings...*/
+
+.mycss {
+  color: #e86600;
+  font-size: 12pt;
+  font-weight: 700;
+  text-align: left;
+  font-faily: Geneva,sans-serif;
+  text-indent: 3px;
+}
+
+/*.....Sidebar.....*/
+
+#sidebar {
+  margin-top: -5px;
+  padding-bottom: 10px;
+  border-top: 1px solid #603;
+  border-bottom: 1px solid #603;
+  border-left: 1px solid #603;
+  text-align: center;
+  width: 26.3%;
+  height: 650px;
+  float: left;
+  margin-left: 10px;
+}
+
+/*Sidebar logos*/
+.sponsor {
+  width: 90px;
+  height: 68px;
+  align: center;
+}
+.sponsor1 {
+  width: 160px;
+  height: 67px;
+  align: center;
+}
+/*.....End Sidebar properties....*/
+
+/*....marquee Index Page....*/
+.css-typing {
+  font-size: 20pt;
+  width: 100%;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+/*-webkit-animation: textslide 3s;*/
+  animation-name: textslide;
+  animation-duration: 3s;
+  color: #b40c00;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*....End Marquee Index Page....*/
+.img5 {
+  width: 124px;
+  height: 124px;
+  float: left;
+  text-wrap: normal;
+  padding-right: 10px;
+}
+
+/*Heading properties*/
+h2 {
+  color: #b40c00;
+  text-align: center;
+}
+h3 {
+  text-align: left;
+  color: #8B4513;
+}
+
+.hr1 {
+  margin-left: 30px;
+  width: 95%;
+}
+/*End of Heading properties*/
+
+/*...scrolling keyframes...*/
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes textslide {
+  from {
+    color: #000;
+  }
+  to {
+    color: red;
+  }
+}
+/*...End Scrolling Feyframes...*/
+
+/*.....Class Properties....*/
+.c1 {
+  text-indent: 1em;
+}
+
+.c2 {
+  font-size: 20px;
+  color: #b40c00;
+}
+
+.c7 {
+  margin-left: 5px;
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+/*.....End Class Properties....*/
+
+/*.....Designs Page....*/
+#imagemap {
+  clear: both;
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin-top: 10px;
+}
+.shed {
+  margin-top: -8px;
+}
+/*...Imagemap Icons...*/
+i.icon-one {
+  color: #CD3700;
+  font-size: 55px;
+  position: absolute;
+  top: 45%;
+  left: 62%;
+}
+i.icon-one p {
+  font-size: 12pt;
+  top: -10px;
+  background-color: #f6f6f6;
+  color: #000;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: -1000px;
+  width: 140%;
+  transition: opacity 1s linear,left 1s linear;
+}
+i.icon-one:hover p {
+  opacity: 1;
+  left: -30px;
+}
+i.icon-two {
+  color: #CD3700;
+  font-size: 55px;
+  position: absolute;
+  top: 40%;
+  left: 87%;
+  cursor: pointer;
+}
+i.icon-two p {
+  font-size: 12pt;
+  background-color: #f6f6f6;
+  color: #000;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 500px;
+  top: -500px;
+  width: 160%;
+  transition: opacity 1s linear,left 1s linear,top 1s linear;
+}
+i.icon-two:hover p {
+  opacity: 1;
+  left: -30px;
+  top: 8px;
+}
+i.icon-three {
+  color: #CD3700;
+  font-size: 55px;
+  position: absolute;
+  top: 53%;
+  left: 43%;
+}
+i.icon-three p {
+  font-size: 12pt;
+  top: -10px;
+  background-color: #f6f6f6;
+  color: #000;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: -1000px;
+  width: 145%;
+  transition: opacity 1s linear,left 1s linear;
+}
+i.icon-three:hover p {
+  opacity: 1;
+  left: -30px;
+  top: 1px;
+}
+i.icon-four {
+  color: #CD3700;
+  font-size: 55px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+i.icon-four p {
+  font-size: 12pt;
+  top: -10px;
+  background-color: #f6f6f6;
+  color: #000;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: -500px;
+  width: 130%;
+  transition: opacity 1s,linear,left 1s linear;
+}
+i.icon-four:hover p {
+  opacity: 1;
+  left: -30px;
+  top: 0;
+}
+i.icon-five {
+  color: #CD3700;
+  font-size: 55px;
+  position: absolute;
+  top: 53%;
+  left: 8%;
+}
+i.icon-five p {
+  font-size: 12pt;
+  top: -10px;
+  background-color: #f6f6f6;
+  color: #000;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: -1000px;
+  width: 130%;
+  transition: opacity 1s linear,left 1s linear;
+}
+i.icon-five:hover p {
+  opacity: 1;
+  left: -30px;
+  top: 0;
+}
+#inclusions {
+  clear: both;
+  float: left;
+}
+.css-typing3 {
+  width: 100%;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50,end);
+  animation: type 5s steps(50,end);
+  font-size: 15pt;
+  color: #b40c00;
+  text-align: center;
+  font-weight: 700;
+}
+#planmap {
+  width: 798px;
+  position: relative;
+  height: auto;
+  text-align: center;
+}
+.ri {
+  opacity: .7;
+  width: 65%;
+  margin-top: 6px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+img:hover {
+ opacity: 1;
+ box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+/*....End Designs Page....*/
+/*...Main Content Our Process Page....*/
+#main_content2 {
+  margin-top: -5px;
+  clear: both;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+/*....Scrolling Our Processes Page....*/
+.css-typing2 {
+  width: 39.5em;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50,end);
+  animation: type 5s steps(50,end);
+  font-size: 15pt;
+  color: #b40c00;
+  text-align: center;
+  font-weight: 700;
+}
+/*...End Scrolling Our Process Page....*/
+
+.divider {
+text-align:center;
+}
+
+/*...blockquote styles....*/
+blockquote {
+  background: #f9f9f9;
+  margin: 1.5em 1px;
+  padding: .5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+/*Borders - (Optional)*/
+  border-left: 5px solid #e86600;
+  border-right: 2px solid #e86600;
+/*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+blockquote:before {
+  content: "\201C";
+/*Unicode for Left Double Quote*//*Font*/
+  font-size: 3em;
+  line-height: .1em;
+  margin-right: .1em;
+  vertical-align: -.4em;
+  font-family: Georgia,serif;
+  font-weight: 700;
+  color: #999;
+}
+blockquote p {
+  display: inline;
+  font-style: italic;
+}
+p.after {
+  margin-left: 5px;
+  font-size: 15px;
+}
+p.after a {
+  color: #e86600;
+  text-decoration: none;
+}
+/*...close Blockquote styles...*/
+
+/*..... Contact Us Page .....*/
+#intro {
+  padding: 10px;
+  width: 720px;
+  height: 70px;
+  text-align: justify;
+  margin-left: 30px;
+}
+
+/*...Contact Form...*/
+#message {
+  margin-top:40px;
+  width: 500px;
+  height: 90px;
+  text-align: justify;
+  margin-left: 150px;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  flex-wrap:wrap;
+  width: 798px;
+ 
+  background-color: transparent;
+  margin-top:-30px;
+}
+.flex-item {
+  width: 370px;
+  height: auto;
+  margin: 10px;
+}
+#contact h2 {
+  margin-top: 35px;
+  float:left;
+  margin-left:70px;
+}
+form,button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.spacer {
+  clear: both;
+  height: 1px;
+}
+/* ----My Form ----- */
+.myform {
+  width: 365px;
+  padding: 14px;
+}
+/* ----Basic Form Properties--- */
+#basic {
+  border: solid 2px #DEDEDE;
+}
+#basic h1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#basic p {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #dedede;
+  padding-bottom: 10px;
+}
+#basic label {
+  display: block;
+  font-weight: 700;
+  text-align: right;
+  width: 140px;
+  float: left;
+}
+#basic .small {
+  color: #666;
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: right;
+  width: 140px;
+}
+#basic input {
+  float: left;
+  width: 200px;
+  margin: 2px 0 30px 10px;
+}
+#basic button {
+  clear: both;
+  margin-left: 150px;
+  background: #888;
+  color: #FFF;
+  border: solid 1px #666;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 6px;
+}
+/* ----------- Stylized Form----------- */
+#stylized {
+
+}
+#stylized h1 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#stylized p {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #b7ddf2;
+  padding-bottom: 10px;
+}
+#stylized label {
+  display: block;
+  font-weight: 700;
+  width: 140px;
+}
+#stylized .small {
+  color: #666;
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  width: 140px;
+}
+#stylized input {
+  font-size: 12px;
+  padding: 4px 2px;
+  border: solid 1px #aacfe6;
+  width: 90%;
+  margin: 2px 0 10px 0px;
+}
+
+.textareainput{
+width:90%;
+}
+
+#stylized button {
+  clear: both;
+  width: 125px;
+  height: 31px;
+  background: #CD3700;
+  text-align: center;
+  line-height: 31px;
+  color: #FFF;
+  font-size: 11px;
+  font-weight: 700;
+}
+/*......Contact Page Google.....*/
+span {
+  color: #603;
+  font-size: 16px;
+  font-family: Helvetica,Arial,sans-serif;
+}
+pre {
+  float: left;
+  margin-left: 20px;
+  margin-top: -1px;
+}
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important;
+}
+#gmap_canvas {
+  height: 230px;
+  width: 265px;
+  float: right;
+  margin-right: 65px;
+  margin-top: 40px;
+  border: solid 1px #CD3700;
+}
+ 
+
+/*footer section with links changes to refelect the syle guide*/
+#footer {
+  padding-top: 10px;
+  border-top: solid 1px #603;
+  border-bottom: none;
+  clear: both;
+  text-align: center;
+  width: 798px;
+  height: 30px;
+}
+.foot {
+  font-size: 10px;
+  font-family: Tahoma,Geneva,sans-serif;
+  padding-top: 5px;
+}
+.foot a {
+  font-size: 10px;
+}
+.foot a:link {
+  color: #000;
+}
+.foot a:visited {
+  color: #e86600;
+}
+.foot a:hover {
+  color: #b40c00;
+  text-decoration: underline;
+}
+
+.foot a:active {
+  color: #b40c00;
+}
+
+/*----END foooter--*/
+
+/*.....hyperlinks....*/
+
+#hyperlinks {
+background-color:#ffffff;
+font-size:14px;
+margin-top:-5px;
+width:798px;
+height:auto;	
+}
