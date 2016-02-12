@@ -1,4 +1,4 @@
-@charset  "utf-8";
+@charset "utf-8"; 
 
 /* CSS Document */
 body,html {
@@ -12,7 +12,7 @@ body,html {
   font-size: 12pt;
   font-family: Geneva,sans-serif;
 }
-h1,h3,h5,h6,p {
+h3,p {
   margin-top: 0;
 /* removing the top margin gets around an issue where margins can escape from their containing div. 
 The remaining bottom margin will hold it away from any elements that follow. */
@@ -23,9 +23,9 @@ A nested div with side padding can also be used as an alternate method. */
 }
 h1 {
   font-size: 24pt;
-  style: bold;
+  font-weight: bold;
   text-decoration: underline;
-  font-color: #b40c00;
+  color: #b40c00;
 }
 a img {
 /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
@@ -109,7 +109,7 @@ a img {
   background-color: #111;
 }
 #nav li a:hover {
-  color: fff;
+  color:#ffffff;
   background-color: #e86600;
 }
 .loginli {
@@ -133,7 +133,7 @@ a img {
   font-size: 12pt;
   font-weight: 700;
   text-align: left;
-  font-faily: Geneva,sans-serif;
+  font-family: Geneva,sans-serif;
   text-indent: 3px;
 }
 
@@ -154,12 +154,12 @@ a img {
 .sponsor {
   width: 90px;
   height: 68px;
-  align: center;
+  text-align:center;
 }
 .sponsor1 {
   width: 160px;
   height: 67px;
-  align: center;
+  text-align:center;
 }
 /*.....End Sidebar properties....*/
 
@@ -171,8 +171,10 @@ a img {
   white-space: nowrap;
   overflow: hidden;
 /*-webkit-animation: textslide 3s;*/
-  animation-name: textslide;
-  animation-duration: 3s;
+  -webkit-animation-name: textslide;
+          animation-name: textslide;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   color: #b40c00;
   text-align: center;
   font-weight: 700;
@@ -183,7 +185,7 @@ a img {
   width: 124px;
   height: 124px;
   float: left;
-  text-wrap: normal;
+ 
   padding-right: 10px;
 }
 
@@ -203,16 +205,28 @@ h3 {
 }
 /*End of Heading properties*/
 
+.center {
+text-align:center;
+}
+
 /*...scrolling keyframes...*/
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
 @keyframes type {
   from {
     width: 0;
   }
 }
 
-@-webkit-keyframes type {
+@-webkit-keyframes textslide {
   from {
-    width: 0;
+    color: #000;
+  }
+  to {
+    color: red;
   }
 }
 
@@ -274,6 +288,7 @@ i.icon-one p {
   position: absolute;
   left: -1000px;
   width: 140%;
+  -webkit-transition: opacity 1s linear,left 1s linear;
   transition: opacity 1s linear,left 1s linear;
 }
 i.icon-one:hover p {
@@ -299,6 +314,7 @@ i.icon-two p {
   left: 500px;
   top: -500px;
   width: 160%;
+  -webkit-transition: opacity 1s linear,left 1s linear,top 1s linear;
   transition: opacity 1s linear,left 1s linear,top 1s linear;
 }
 i.icon-two:hover p {
@@ -324,6 +340,7 @@ i.icon-three p {
   position: absolute;
   left: -1000px;
   width: 145%;
+  -webkit-transition: opacity 1s linear,left 1s linear;
   transition: opacity 1s linear,left 1s linear;
 }
 i.icon-three:hover p {
@@ -349,6 +366,7 @@ i.icon-four p {
   position: absolute;
   left: -500px;
   width: 130%;
+  -webkit-transition: opacity 1s,linear,left 1s linear;
   transition: opacity 1s,linear,left 1s linear;
 }
 i.icon-four:hover p {
@@ -374,6 +392,7 @@ i.icon-five p {
   position: absolute;
   left: -1000px;
   width: 130%;
+  -webkit-transition: opacity 1s linear,left 1s linear;
   transition: opacity 1s linear,left 1s linear;
 }
 i.icon-five:hover p {
@@ -397,12 +416,13 @@ i.icon-five:hover p {
   text-align: center;
   font-weight: 700;
 }
-#planmap {
+.planmap {
   width: 798px;
   position: relative;
   height: auto;
   text-align: center;
 }
+
 .ri {
   opacity: .7;
   width: 65%;
@@ -410,9 +430,14 @@ i.icon-five:hover p {
   padding-top: 10px;
   margin-bottom: 10px;
 }
+ .planmap img:hover{
+box-shadow: 0 3px 6px rgba(0,0,0,0.9);	
+
+}
 img:hover {
  opacity: 1;
- box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+ 
+
 }
 /*....End Designs Page....*/
 /*...Main Content Our Process Page....*/
@@ -452,8 +477,6 @@ blockquote {
   border-left: 5px solid #e86600;
   border-right: 2px solid #e86600;
 /*Box Shadow - (Optional)*/
-  -moz-box-shadow: 2px 2px 15px #ccc;
-  -webkit-box-shadow: 2px 2px 15px #ccc;
   box-shadow: 2px 2px 15px #ccc;
 }
 blockquote:before {
@@ -500,10 +523,16 @@ p.after a {
 }
 .flex-container {
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-  flex-wrap:wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-flex-wrap:wrap;
+      -ms-flex-wrap:wrap;
+          flex-wrap:wrap;
   width: 798px;
  
   background-color: transparent;
@@ -664,11 +693,11 @@ pre {
   text-align: center;
   width: 798px;
   height: 30px;
+
 }
 .foot {
   font-size: 10px;
   font-family: Tahoma,Geneva,sans-serif;
-  padding-top: 5px;
 }
 .foot a {
   font-size: 10px;
@@ -686,6 +715,11 @@ pre {
 
 .foot a:active {
   color: #b40c00;
+}
+
+.validate {
+text-align:left;
+margin-top:-18px;
 }
 
 /*----END foooter--*/
