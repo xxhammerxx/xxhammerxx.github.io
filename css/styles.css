@@ -61,7 +61,7 @@ a img {
 }
 #leftheader {
   width: 49.5%;
-  height: 140px;
+  height:auto;
   float: left;
 }
 .img1 {
