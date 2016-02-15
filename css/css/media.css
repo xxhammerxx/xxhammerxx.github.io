@@ -1,0 +1,833 @@
+/*Media queries for responsive tablet devices*/
+@media (min-width: 481px) and (max-width: 801px) {
+  body {
+    margin: 0;
+    padding: 0;
+  /*background:url(../images/bg5.jpg);*/
+    background: #efebe9;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 10pt;
+    font-family: Verdana,Geneva,sans-serif;
+  }
+  #wrapper {
+    width: 98%;
+  }
+
+  /*..... Header Properties ...*/
+  #leftheader {
+    margin-bottom: 10px;
+    width: 49.5%;
+    height: 140px;
+    float: left;
+  }
+  .img1 {
+    width: 100%;
+    height: 140px;
+  }
+  #rightheader {
+    float: right;
+    height: 140px;
+    width: 49.5%;
+    margin-bottom: 10px;
+  }
+  /*.....End of Header Properties ...*/
+  
+  /*..... Navigational Bar Properties ...*/
+  #nav li {
+    float: left;
+    width: 100%;
+  }
+  #nav li a {
+    display: block;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff;
+    border-right: 1px solid #ccc;
+  }
+  #nav li a:hover {
+    color:#ffffff;
+    background-color: #e86600;
+  }
+  /*....End of Navigation Bar...*/
+
+  /*..... Index Page Main Content ...*/
+  #sidebar {
+    display: none;
+    visibility: hidden;
+  }
+  #home_content {
+    width: 98.5%;
+    height: auto;
+    clear: left;
+    float: left;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 11pt;
+  }
+
+  /* .... Index Page Text Scrolling....*/
+  .css-typing {
+    width: 100%;
+    font-size: 13pt;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50,end);
+    animation: type 5s steps(50,end);
+    color: #b40c00;
+    text-align: center;
+    font-weight: 700;
+  }
+  /*..... End Index Main Page ...*/
+  
+  /* .... About Page Text Scrolling....*/
+  .css-typing2 {
+    width: 100%;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50,end);
+    animation: type 5s steps(50,end);
+    font-size: 13pt;
+    color: #b40c00;
+    text-align: center;
+    font-weight: 700;
+  }
+  #main_content2 {
+    margin-top: 10px;
+    clear: both;
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  /* .... End About Page ....*/
+  
+  /*........Design Page Content area.....*/
+  img.shed {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #imagemap {
+    clear: both;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    height: auto;
+  }
+  
+  /*....ImageMap Icons....*/
+  i.icon-one {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 45%;
+    left: 62%;
+  }
+  i.icon-one p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -1000px;
+    width: 140%;
+    transition: opacity 1s linear,left 1s linear;
+  }
+  i.icon-one:hover p {
+    opacity: 1;
+    left: -30px;
+  }
+  i.icon-two {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 25%;
+    left: 90%;
+    cursor: pointer;
+  }
+  i.icon-two p {
+    font-size: 12pt;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 500px;
+    top: -500px;
+    width: 130%;
+    transition: opacity 1s linear,left 1s linear,top 1s linear;
+  }
+  i.icon-two:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 8px;
+  }
+  i.icon-three {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+  }
+  i.icon-three p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -1000px;
+    width: 145%;
+    transition: opacity 1s linear,left 1s linear;
+  }
+  i.icon-three:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 1px;
+  }
+  i.icon-four {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+  i.icon-four p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -500px;
+    width: 130%;
+    transition: opacity 1s,linear,left 1s linear;
+  }
+  i.icon-four:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 0;
+  }
+  i.icon-five {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 53%;
+    left: 8%;
+  }
+  i.icon-five p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -1000px;
+    width: 150%;
+    transition: opacity 1s linear,left 1s linear;
+  }
+  i.icon-five:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 0;
+  }
+	
+/*...End of Icon Properties...*/
+
+/*....Design Page...*/
+  
+  #inclusions {
+    border-top: 2px solid #603;
+    border-bottom: 2px solid #603;
+    margin-top: -4px;
+    clear: both;
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .c1 {
+    text-indent: 1em;
+  }
+
+  /*..... Text Scrolling ...*/
+  .css-typing3 {
+    width: 100%;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50,end);
+    animation: type 5s steps(50,end);
+    font-size: 15pt;
+    color: #b40c00;
+    text-align: center;
+    font-weight: 700;
+  }
+  .planmap {
+    width: 100%;
+    position: relative;
+    height: auto;
+    text-align: center;
+  }
+  .ri {
+    opacity: .7;
+    width: 80%;
+    margin-top: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+  /*..... End of Design Page ...*/
+  
+  /*..... Blockquotes Testimonial Page ...*/
+  p.after {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  p.after a {
+    color: #e86600;
+    text-decoration: none;
+  }
+  /*.....End Blockquotes Testimonial Page ...*/
+  
+  /*...Faqs Page....*/
+  
+  #intro {
+  padding: 10px;
+  width: 90%;
+  height: 70px;
+  text-align: justify;
+  margin-left: 30px;
+}
+ /*....End...*/
+  
+  /*....Contact Page....*/
+  
+  .flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin-top:-20px;
+}
+/*....Left Side Flex*/
+#stylized {
+    width: 100%;
+	height:auto;
+	float:left;
+	margin-left:5px;
+	
+  }
+  .myform {
+  width: 100%;
+  margin-top:-30px;
+  float:left;
+  
+  }
+  
+  #intro p{
+  margin-top:20px;
+  width: 100%;
+  font-size:12px;
+  height: auto;
+  text-align: justify;
+  float:left;
+  margin-left:50px;
+}
+
+ /*....Right Side Flex*/ 
+  #intro {
+  margin-top:20px;
+  width: 70%;
+  font-size:12px;
+  height: auto;
+  text-align: justify;
+}
+.flex-item {
+  width: 100%;
+  height: auto;
+}
+#contact h2 {
+  width:90%;
+  margin-top: 2px;
+  float:left;
+  margin-left:0px;
+}
+#gmap_canvas {
+  height: 230px;
+  width: 255px;
+  float: left;
+  margin-left: 110px;
+  margin-top: 1px;
+  border: solid 1px #CD3700;
+  margin-bottom:10px;
+}
+
+  /*..... Footer Properties ...*/
+  #footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 10px;
+    padding-top:10px;
+	
+  }
+  .foot a {
+    font-size: 10px;
+  }
+  .foot a:link {
+    color: #000;
+  }
+  .foot a:visited {
+    color: #e86600;
+  }
+  .foot a:hover {
+    color: #b40c00;
+    text-decoration: underline;
+  }
+  .foot a:active {
+    color: #b40c00;
+  }
+  .foot {
+    font-size: 10px;
+  }
+}
+
+/*----END foooter--*/
+/*Media queries for responsive mobile devices*/
+@media (max-width: 481px) {
+  body {
+    margin: 0;
+    padding: 0;
+  /*background:url(../images/bg5.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 8pt;
+    font-family: Verdana,Geneva,sans-serif;
+  }
+  #wrapper {
+    width: 98%;
+  }
+
+  /*.......Header Properties......*/
+  #header_container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #leftheader {
+    width: 100%;
+    height: 140px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: 140px;
+  }
+
+  #rightheader {
+    display: none;
+    visibility: hidden;
+  }
+  /*.......End Header ......*/
+  
+  /*.......Navigational Bar ......*/
+  #nav li {
+    float: left;
+    width: 100%;
+  }
+  #nav li a {
+    display: block;
+    padding: 8px 18px;
+    text-decoration: none;
+    color:#fff;
+    border-right: 1px solid #ccc;
+  }
+  #nav li a:hover {
+    color:#ffffff;
+    background-color: #e86600;
+  }
+  /*.......End Navigation Bar ......*/
+  
+  /*..... Index Main Content ...*/
+  .main {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #sidebar {
+    display: none;
+    visibility: hidden;
+  }
+  #home_content {
+    clear: left;
+    float: left;
+    height: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 10pt;
+  }
+  .main_content {
+    width: 100%;
+    padding: 0;
+  }
+  /*..... End Index Main Content ...*/
+  
+  /*---- Text Scrolling Index Page---- */
+  .css-typing {
+    width: 100%;
+    font-size: 11pt;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50,end);
+    animation: type 5s steps(50,end);
+    color: #b40c00;
+    text-align: center;
+    font-weight: 700;
+  }
+  /*---- End Index Page Scrolling ---- */
+  
+  /* .... About Page ....*/
+  #header_container {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  #main_content2 {
+    margin-top: 10px;
+    clear: both;
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .css-typing2 {
+    width: 100%;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50,end);
+    animation: type 5s steps(50,end);
+    font-size: 11pt;
+    color: #b40c00;
+    text-align: center;
+    font-weight: 700;
+  }
+  /*---- End About Page  ---- */
+ 
+
+  /*----Design Page---*/
+  img.shed {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #imagemap {
+    clear: both;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    height: auto;
+  }
+  .designs {
+    width: 100%;
+    height: auto;
+  }
+  
+ /*...Imagemap Icons...*/
+  i.icon-one {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 45%;
+    left: 62%;
+  }
+  i.icon-one p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -1000px;
+    width: 140%;
+    transition: opacity 1s linear,left 1s linear;
+  }
+  i.icon-one:hover p {
+    opacity: 1;
+    left: -20px;
+  }
+  i.icon-two {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 85%;
+    cursor: pointer;
+  }
+  i.icon-two p {
+    font-size: 12pt;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 500px;
+    top: -500px;
+    width: 150%;
+    transition: opacity 1s linear,left 1s linear,top 1s linear;
+  }
+  i.icon-two:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 8px;
+  }
+  i.icon-three {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 53%;
+    left: 43%;
+  }
+  i.icon-three p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -1000px;
+    width: 145%;
+    transition: opacity 1s linear,left 1s linear;
+  }
+  i.icon-three:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 1px;
+  }
+  i.icon-four {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+  i.icon-four p {
+    font-size: 12pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -500px;
+    width: 130%;
+    transition: opacity 1s,linear,left 1s linear;
+  }
+  i.icon-four:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 0;
+  }
+  i.icon-five {
+    color: #CD3700;
+    font-size: 50px;
+    position: absolute;
+    top: 53%;
+    left: 8%;
+  }
+  i.icon-five p {
+    font-size: 11pt;
+    top: -10px;
+    background-color: #f6f6f6;
+    color: #000;
+    border-radius: 10px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    left: -1000px;
+    width: 200%;
+    transition: opacity 1s linear,left 1s linear;
+  }
+  i.icon-five:hover p {
+    opacity: 1;
+    left: -30px;
+    top: 0;
+/*......End Icon Properties.....*/
+  }
+  #inclusions {
+    border-top: 2px solid #603;
+    border-bottom: 2px solid #603;
+    margin-top: -4px;
+    clear: both;
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  .c1 {
+    text-indent: 1em;
+  }
+  .css-typing3 {
+    width: 100%;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50,end);
+    animation: type 5s steps(50,end);
+    font-size: 13pt;
+    color: #b40c00;
+    text-align: center;
+    font-weight: 700;
+  }
+  .planmap {
+    width: 100%;
+    position: relative;
+    height: auto;
+    float: left;
+  }
+  .ri {
+    opacity: .7;
+  }
+  .designs {
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    display: none;
+    visibility: hidden;
+  }
+  /*----End Design Page---*/
+  
+  /*..... Blockquotes Testimonial Page ...*/
+  p.after {
+    margin-left: 1px;
+    font-size: 12px;
+  }
+  p.after a {
+    color: #e86600;
+    text-decoration: none;
+  }
+  /*.....End Blockquotes Testimonial Page ...*/
+  
+  /*....Faqs Page....*/
+   #intro{
+  padding: 10px;
+  width: 90%;
+  height: 60px;
+  text-align: justify;
+  margin-left: 30px;
+}
+.paragraph {
+ float:left;
+ margin-left:-30px;
+}
+  
+  /*........contact page....*/
+  .flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin-top:-30px;
+}
+  #intro p{
+  margin-top:60px;
+  width: 89%;
+  font-size:12px;
+  height: auto;
+  text-align: justify;
+
+}
+
+.form-h2{
+ margin-top: 20px;
+ float:left;
+ width:85%;
+}
+
+#stylized {
+  width: 100%;
+  height:auto;
+  margin-top:0px;
+  float:left;
+
+  }
+  .myform{
+  width: 100%;
+  padding: 30px 30px 30px 0;
+  margin-top:0px;
+}
+#contact  {
+  display:none;
+  overflow:hidden;
+}
+
+/*... contact google...*/
+
+
+  /*---Footer Section Properties----*/
+  #footer {
+    clear: both;
+    text-align:center;
+    width: 100%;
+    height: 30px;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 10px;
+    padding-top:10px;
+	
+  }
+  .foot a {
+    font-size: 10px;
+  }
+  .foot a:link {
+    color: #000;
+  }
+  .foot a:visited {
+    color: #e86600;
+  }
+  .foot a:hover {
+    color: #b40c00;
+    text-decoration: underline;
+  }
+  .foot a:active {
+    color: #b40c00;
+  }
+  .foot {
+    font-size: 10px;
+  }
+.validate {
+display:none;
+overflow:hidden;
+}
+  /*----END foooter--*/
+  
+}
